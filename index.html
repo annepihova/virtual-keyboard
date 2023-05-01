@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>virtual keyboard</title>
+</head>
+<body class="body">
+   <main class="main">
+    <h1 class="main__title">RSS Virtual Keyboard</h1>
+    <textarea class="textarea" rows="10" cols="50"></textarea>
+    <div class="keyboard">
+        <div class="keyboard__row row">
+            <div class="key keyboard__row__key Backquote">
+                <div class="en">
+                  <span class="case-up">`</span>
+                  <span class="case-down hidden">~</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ё</span>
+                  <span class="case-down hidden">Ё</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit1">
+                <div class="en">
+                  <span class="case-up">1</span>
+                  <span class="case-down hidden">!</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">1</span>
+                    <span class="case-down hidden">!</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Digit2">
+                <div class="en">
+                  <span class="case-up">2</span>
+                  <span class="case-down hidden">@</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">2</span>
+                  <span class="case-down hidden">"</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit3">
+                <div class="en">
+                  <span class="case-up">3</span>
+                  <span class="case-down hidden">#</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">3</span>
+                  <span class="case-down hidden">№</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit4">
+                <div class="en">
+                  <span class="case-up">4</span>
+                  <span class="case-down hidden">$</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">4</span>
+                  <span class="case-down hidden">;</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit5">
+                <div class="en">
+                  <span class="case-up">5</span>
+                  <span class="case-down hidden">%</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">5</span>
+                    <span class="case-down hidden">%</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Digit6">
+                <div class="en">
+                  <span class="case-up">6</span>
+                  <span class="case-down hidden">^</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">6</span>
+                  <span class="case-down hidden">:</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit7">
+                <div class="en">
+                  <span class="case-up">7</span>
+                  <span class="case-down hidden">&</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">7</span>
+                  <span class="case-down hidden">?</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit8">
+                <div class="en">
+                  <span class="case-up">8</span>
+                  <span class="case-down hidden">*</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">8</span>
+                    <span class="case-down hidden">*</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Digit9">
+                <div class="en">
+                  <span class="case-up">9</span>
+                  <span class="case-down hidden">(</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">9</span>
+                  <span class="case-down hidden">(</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Digit0">
+                <div class="en">
+                  <span class="case-up">0</span>
+                  <span class="case-down hidden">)</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">0</span>
+                  <span class="case-down hidden">)</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Minus">
+                <div class="en">
+                  <span class="case-up">-</span>
+                  <span class="case-down hidden">_</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">-</span>
+                  <span class="case-down hidden">_</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Equal">
+                <div class="en">
+                  <span class="case-up">=</span>
+                  <span class="case-down hidden">+</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">=</span>
+                  <span class="case-down hidden">+</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Backspace key_always">
+                <div class="always">
+                  Backspace
+                </div>
+            </div>
+        </div>
+        <div class="keyboard__row row">
+            <div class="key keyboard__row__key Tab key_always">
+                <div class="always">
+                    Tab
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyQ">
+                <div class="en">
+                  <span class="case-up">q</span>
+                  <span class="case-down hidden">Q</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">й</span>
+                    <span class="case-down hidden">Й</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyW">
+                <div class="en">
+                  <span class="case-up">w</span>
+                  <span class="case-down hidden">W</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ц</span>
+                  <span class="case-down hidden">Ц</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyE">
+                <div class="en">
+                  <span class="case-up">e</span>
+                  <span class="case-down hidden">E</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">у</span>
+                  <span class="case-down hidden">У</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyR">
+                <div class="en">
+                  <span class="case-up">r</span>
+                  <span class="case-down hidden">R</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">к</span>
+                  <span class="case-down hidden">К</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyT">
+                <div class="en">
+                  <span class="case-up">t</span>
+                  <span class="case-down hidden">T</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">е</span>
+                    <span class="case-down hidden">Е</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyY">
+                <div class="en">
+                  <span class="case-up">y</span>
+                  <span class="case-down hidden">Y</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">н</span>
+                  <span class="case-down hidden">Н</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyU">
+                <div class="en">
+                  <span class="case-up">u</span>
+                  <span class="case-down hidden">U</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">г</span>
+                  <span class="case-down hidden">Г</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyI">
+                <div class="en">
+                  <span class="case-up">i</span>
+                  <span class="case-down hidden">I</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">ш</span>
+                    <span class="case-down hidden">Ш</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyO">
+                <div class="en">
+                  <span class="case-up">o</span>
+                  <span class="case-down hidden">O</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">щ</span>
+                  <span class="case-down hidden">Щ</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyP">
+                <div class="en">
+                  <span class="case-up">p</span>
+                  <span class="case-down hidden">P</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">з</span>
+                  <span class="case-down hidden">З</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key BracketLeft">
+                <div class="en">
+                  <span class="case-up">[</span>
+                  <span class="case-down hidden">{</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">х</span>
+                  <span class="case-down hidden">Х</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key BracketRight">
+                <div class="en">
+                  <span class="case-up">]</span>
+                  <span class="case-down hidden">}</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ъ</span>
+                  <span class="case-down hidden">Ъ</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Delete key_always">
+                <div class="always">
+                  Del
+                </div>
+            </div>
+        </div>
+        <div class="keyboard__row row">
+            <div class="key keyboard__row__key CapsLock key_always">
+                <div class="always">
+                    CapsLock
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyA">
+                <div class="en">
+                  <span class="case-up">a</span>
+                  <span class="case-down hidden">A</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">ф</span>
+                    <span class="case-down hidden">Ф</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyS">
+                <div class="en">
+                  <span class="case-up">s</span>
+                  <span class="case-down hidden">S</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ы</span>
+                  <span class="case-down hidden">Ы</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyD">
+                <div class="en">
+                  <span class="case-up">d</span>
+                  <span class="case-down hidden">D</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">в</span>
+                  <span class="case-down hidden">В</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyF">
+                <div class="en">
+                  <span class="case-up">f</span>
+                  <span class="case-down hidden">F</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">а</span>
+                  <span class="case-down hidden">А</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyG">
+                <div class="en">
+                  <span class="case-up">g</span>
+                  <span class="case-down hidden">G</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">п</span>
+                    <span class="case-down hidden">П</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyH">
+                <div class="en">
+                  <span class="case-up">h</span>
+                  <span class="case-down hidden">H</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">р</span>
+                  <span class="case-down hidden">Р</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyJ">
+                <div class="en">
+                  <span class="case-up">j</span>
+                  <span class="case-down hidden">J</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">о</span>
+                  <span class="case-down hidden">О</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyK">
+                <div class="en">
+                  <span class="case-up">k</span>
+                  <span class="case-down hidden">K</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">л</span>
+                    <span class="case-down hidden">л</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyL">
+                <div class="en">
+                  <span class="case-up">l</span>
+                  <span class="case-down hidden">L</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">д</span>
+                  <span class="case-down hidden">Д</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Semicolon">
+                <div class="en">
+                  <span class="case-up">;</span>
+                  <span class="case-down hidden">:</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ж</span>
+                  <span class="case-down hidden">Ж</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Quote">
+                <div class="en">
+                  <span class="case-up">'</span>
+                  <span class="case-down hidden">"</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">э</span>
+                  <span class="case-down hidden">Э</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Enter key_always">
+                <div class="always">
+                  Enter
+                </div>
+            </div>
+        </div>
+        <div class="keyboard__row row">
+            <div class="key keyboard__row__key ShiftLeft key_always">
+                <div class="always">
+                    Shift
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Backslash">
+                <div class="en">
+                  <span class="case-up">\</span>
+                  <span class="case-down hidden">|</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">\</span>
+                  <span class="case-down hidden">/</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyZ">
+                <div class="en">
+                  <span class="case-up">z</span>
+                  <span class="case-down hidden">Z</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">я</span>
+                    <span class="case-down hidden">Я</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyX">
+                <div class="en">
+                  <span class="case-up">x</span>
+                  <span class="case-down hidden">X</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ч</span>
+                  <span class="case-down hidden">Ч</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyC">
+                <div class="en">
+                  <span class="case-up">c</span>
+                  <span class="case-down hidden">C</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">с</span>
+                  <span class="case-down hidden">С</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyV">
+                <div class="en">
+                  <span class="case-up">v</span>
+                  <span class="case-down hidden">V</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">м</span>
+                  <span class="case-down hidden">М</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyB">
+                <div class="en">
+                  <span class="case-up">b</span>
+                  <span class="case-down hidden">B</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">и</span>
+                    <span class="case-down hidden">И</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key KeyN">
+                <div class="en">
+                  <span class="case-up">n</span>
+                  <span class="case-down hidden">N</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">т</span>
+                  <span class="case-down hidden">Т</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key KeyM">
+                <div class="en">
+                  <span class="case-up">m</span>
+                  <span class="case-down hidden">m</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ь</span>
+                  <span class="case-down hidden">Ь</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Comma">
+                <div class="en">
+                  <span class="case-up">,</span>
+                  <span class="case-down hidden">&lt;</span>
+                </div>
+                <div class="ru hidden">
+                    <span class="case-up">б</span>
+                    <span class="case-down hidden">Б</span>
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Period">
+                <div class="en">
+                  <span class="case-up">.</span>
+                  <span class="case-down hidden">&gt;</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">ю</span>
+                  <span class="case-down hidden">Ю</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key Slash">
+                <div class="en">
+                  <span class="case-up">/</span>
+                  <span class="case-down hidden">?</span>
+                </div>
+                <div class="ru hidden">
+                  <span class="case-up">.</span>
+                  <span class="case-down hidden">,</span>
+                </div>
+            </div>
+            <div class="key keyboard__row__key key_always ArrowUp">
+                <div class="always">
+                    ▲
+                  </div>
+            </div>
+            <div class="key keyboard__row__key key_always ShiftRight">
+                <div class="always">
+                    Shift
+                  </div>
+            </div>
+        </div>
+        <div class="keyboard__row row">
+            <div class="key keyboard__row__key ControlLeft key_always">
+                <div class="always">
+                    Ctrl
+                  </div>
+            </div>
+            <div class="key keyboard__row__key MetaLeft key_always">
+                <div class="always">
+                    Win
+                  </div>
+            </div>
+            <div class="key keyboard__row__key AltLeft key_always">
+                <div class="always">
+                    Alt
+                  </div>
+            </div>
+            <div class="key keyboard__row__key Space key_always">
+                <div class="always"></div>
+            </div>
+            <div class="key keyboard__row__key AltRight key_always">
+                <div class="always">
+                    Alt
+                  </div>
+            </div>
+            <div class="key keyboard__row__key ControlRight key_always">
+                <div class="always">
+                    Ctrl
+                  </div>
+            </div>
+            <div class="key keyboard__row__key key_always ArrowLeft">
+                <div class="always">
+                    ◄
+                  </div>
+            </div>
+            <div class="key keyboard__row__key key_always ArrowDown">
+                <div class="always">
+                    ▼
+                  </div>
+            </div>
+            <div class="key keyboard__row__key key_always ArrowRight">
+                <div class="always">
+                    ►
+                  </div>
+            </div>
+        </div>
+    </div>
+    <p>To change the language, use the left keys <strong>ctrl</strong> + <strong>alt</strong></p>
+   </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
