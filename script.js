@@ -67,8 +67,9 @@ document.addEventListener('keydown', (event) => {
 
   const textarea = document.querySelector('.textarea');
   textarea.focus();
+
   if (event.code === 'Tab') {
-    textarea.textContent += '    ';
+    textarea.value += '    ';
   }
 
   let arrow;
@@ -92,6 +93,7 @@ const clickOnVirtualKeyboard = () => {
   const keys = document.querySelectorAll('.key');
   const textarea = document.querySelector('.textarea');
   const tab = document.querySelector('.Tab');
+  const space = document.querySelector('.Space');
   for (let i = 0; i < keys.length; i += 1) {
     keys[i].addEventListener('click', () => {
       for (let j = 0; j < keys[i].children.length; j += 1) {
@@ -123,6 +125,10 @@ const clickOnVirtualKeyboard = () => {
     textarea.value += '    ';
   });
 
+  space.addEventListener('click', () => {
+    textarea.value += ' ';
+  });
+
   for (let i = 0; i < arrows.length; i += 1) {
     arrows[i].addEventListener('click', () => {
       textarea.value += arrows[i].textContent;
@@ -132,6 +138,16 @@ const clickOnVirtualKeyboard = () => {
   const enter = document.querySelector('.Enter');
   enter.addEventListener('click', () => {
     textarea.value += '\n';
+  });
+
+  const backspace = document.querySelector('.Backspace');
+  backspace.addEventListener('click', () => {
+    const cursorPosition = textarea.selectionStart;
+    const textBeforeCursor = textarea.value.slice(0, cursorPosition);
+    const textAfterCursor = textarea.value.slice(cursorPosition, textarea.value.length);
+    textarea.value = `${textBeforeCursor.slice(0, -1)}${textAfterCursor}`;
+    textarea.selectionStart = cursorPosition + 1;
+    textarea.selectionEnd = cursorPosition + 1;
   });
 };
 
